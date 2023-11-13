@@ -154,6 +154,7 @@ border-radius: 20px;
     height: 100%;
     max-width: 100%;
     background-color: #252525;
+    overflow-x: hidden; 
   }
   .header {
       display: none !important;
@@ -173,9 +174,11 @@ border-radius: 20px;
     align-items: center;
   }
 
-  .subMission1, .subMission2, .subMission3 {
-    width: 100%; /* Make cards occupy the full width */
-    margin: 10px 0; /* Adjust margin for spacing between cards */
+  .subMisssionCards {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    flex-direction: row;
+    width: fit-content;
   }
   .homeP1 {
     display: flex;
@@ -189,7 +192,7 @@ border-radius: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
   }
 }
 

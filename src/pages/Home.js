@@ -18,7 +18,6 @@ const Home = () => {
           </p>
         </div>
         <div className="subMission2">
-          <h2>{t("Vision2")}</h2>
           <p>
             {t("Vision2")}
           </p>
