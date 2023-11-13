@@ -7,6 +7,8 @@
     color: white;
     padding: 10px;
     position: relative;
+    max-width: 100%;
+    width: 100px;
   }
   
   .menu-button {
@@ -62,6 +64,7 @@
   @media (max-width: 700px) {
     .hamburger-menu {
       display: flex !important;
+      width: 100%;
     }
     .menu-button {
       display: block;
@@ -95,7 +98,9 @@
       padding: 0;
       margin: 20px 0;
     }
-  
+    .content {
+        width: 100%;
+    }
     .menu-items li {
       padding: 10px;
     }

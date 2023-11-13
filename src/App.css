@@ -5,7 +5,9 @@
   text-align: center;
   height: 100%;
   width: 100%;
+  background-color: #252525;
 }
+
 
 .header  {
   position: fixed;
@@ -148,6 +150,11 @@ border-radius: 20px;
   max-height: 200px; /* Set a maximum height for the "Vision" paragraph before scrolling */
 }
 @media (max-width: 700px) {
+  .App {
+    height: 100%;
+    max-width: 100%;
+    background-color: #252525;
+  }
   .header {
       display: none !important;
   } 
@@ -176,6 +183,13 @@ border-radius: 20px;
     font-size: 16px; /* Example: Reduce font size */
     line-height: 1.5; /* Example: Adjust line height */
     margin: 10px 0; /* Example: Adjust margin */
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 
