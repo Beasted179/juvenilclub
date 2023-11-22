@@ -1,0 +1,52 @@
+/* home.css */
+
+.Home {
+    display: flex; 
+    padding: 20px; /* Add padding around the entire content */
+    width: 100%;
+  }
+  .homeP1{
+    display: flex;
+    border: 5px solid #a2d689;
+    font-size: 40px;
+    color: #a2d689;
+
+  }
+  .mainHome {
+        flex: 1; /* Allow mainHome to grow and take available space */
+    padding: 20px; /* Add padding inside mainHome */
+    width: 100%;
+
+  }
+  
+  .mainHome h2 {
+    margin-bottom: 10px;
+    color: #a2d689;
+    margin-top: 10vh;
+  }
+  
+  .subMisssionCards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Add spacing between subMission cards */
+  }
+  
+  .subMission {
+    width: 22vw;
+    height: 100%;
+    font-size: 20px;
+    color: #a2d689;
+    padding: 10px; /* Add padding inside each subMission card */
+    border: 1px solid #a2d689;
+    border-radius: 20px ;
+  }
+  
+  .sideBarHome {
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .homeImg1 {
+    border-radius: 29px;
+    margin-right: 0px;
+  }
+  

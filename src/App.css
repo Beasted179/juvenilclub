@@ -26,7 +26,6 @@ a {
   max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
   background: linear-gradient(to bottom, #444, #333); /* Add the gradient background */
 }
 .header, li{  
@@ -43,71 +42,11 @@ a {
   color: rgb(2, 246, 47); /* Change the text color on hover to the desired color */
 }
 
-
-/* Ensure the content expands to fill the height of the viewport */
 .language-switcher {
-  position: fixed;
-  top: 6%; /* Adjust top position as needed */
-  left: 500px; /* Adjust right position as needed */  
-  padding: 10px; /* Add padding as needed */
-  z-index: 1; /* Ensure it's above the content */
+position: fixed;
+margin-top: 7vh;
 }
 
-.Home {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next row if there's not enough space */
-  justify-content: space-between; /* Space items evenly horizontally */
-  align-items: flex-start; 
-  height: 100%;
-}
-.content {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(37, 37, 37);
-  padding-top: 60px;
-}
-.Home, h2 {
-  color: rgb(199, 253, 189);
-  font-size: 2.5rem;
-  letter-spacing: 6px;
-  font-weight: bold;
-}
-.mainHome{
-  display: flex;
-  margin: 5vh;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-}
-.subMisssionCards {
-  display: flex;
-  justify-content: space-between; /* Adjust alignment as needed */
-  flex-direction: row;
-  width: fit-content;
-}
-.subMission1{
-  color: white;
-}
-.subMission1, .subMission2, .subMission3 {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 15vw;
-  font-size: 19px !important;
-  background-color: rgb(0, 0, 0);
-  border: #333 solid 3px;
-  margin: 5vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 20px;
-}
-
-.subMission1:hover, .subMission2:hover, .subMission3:hover {
-  transform: translateY(-10px);
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 50%, transparent 50%);
-  background-size: 200% 200%;
-  animation: shine 0.5s forwards;
-}
 
 
 @keyframes shine {
@@ -117,27 +56,7 @@ a {
 }
 
 
-.mainHome,
-.sideBarHome {
-  flex: 1; /* Allow each section to grow and take available space */
-}
-.sideBarHome {
-  flex: 0 0 auto; /* Don't allow the sidebar to grow or shrink */
-}
-.homeP1 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #a7ff5e; /* You can adjust the width and color */
-  font-size: 2rem;
-  padding: 10px; 
-}
-.homeImg1 {
-margin: 50px;
 
-border-radius: 20px;
-}
 .logo {
   max-width: 100px; /* Adjust the maximum width as needed */
   height: auto; /* Maintain aspect ratio */
@@ -159,33 +78,9 @@ border-radius: 20px;
   .header {
       display: none !important;
   } 
-  .hamburgerMenu {
-    display: block;
-  }
-  .language-switcher {
-    display: none;
-  }
-
-  .mainHome {
-    display: flex;
-    margin: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .subMisssionCards {
-    display: flex;
-    justify-content: space-between; /* Adjust alignment as needed */
-    flex-direction: row;
-    width: fit-content;
-  }
-  .homeP1 {
-    display: flex;
-    justify-content: center;
-    font-size: 16px; /* Example: Reduce font size */
-    line-height: 1.5; /* Example: Adjust line height */
-    margin: 10px 0; /* Example: Adjust margin */
+  .hamburger-menu {
+    display: flex !important;
+    width: 100%;
   }
   .content {
     display: flex;
